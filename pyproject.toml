@@ -1,3 +1,61 @@
+[tool]
+[tool.poetry]
+name = "sklearn-stubs"
+version = "0.1.0"
+homepage = "https://github.com/danibene/sklearn-stubs"
+description = "Public type stubs for sklearn."
+authors = ["Microsoft Python team and others"]
+readme = "README.md"
+license =  "MIT"
+classifiers=[
+    'Development Status :: 2 - Pre-Alpha',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Natural Language :: English',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+]
+packages = [
+    { include = "sklearn-stubs" },
+    { include = "tests", format = "sdist" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+
+black  = { version = "^22.3.0", optional = true}
+isort  = { version = "5.10.1", optional = true}
+flake8  = { version = "4.0.1", optional = true}
+flake8-docstrings = { version = "^1.6.0", optional = true }
+pytest  = { version = "^7.0.1", optional = true}
+pytest-cov  = { version = "^3.0.0", optional = true}
+tox  = { version = "^3.24.5", optional = true}
+virtualenv  = { version = "^20.13.1", optional = true}
+pip  = { version = "^22.0.3", optional = true}
+twine  = { version = "^3.8.0", optional = true}
+pre-commit = {version = "^2.17.0", optional = true}
+toml = {version = "^0.10.2", optional = true}
+numpy = "^1.24.3"
+scikit-learn = "^1.2.2"
+
+[tool.poetry.extras]
+test = [
+    "pytest",
+    "black",
+    "isort",
+    "flake8",
+    "flake8-docstrings",
+    "pytest-cov"
+    ]
+
+dev = ["tox", "pre-commit", "virtualenv", "pip", "twine", "toml", "mkinit"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
 [tool.black]
 line_length = 130
 target_version = ["py37"]
