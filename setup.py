@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="scipy-stubs",
+    name="scikit-learn-stubs",
     version="0.1.0",
     url="https://github.com/microsoft/python-type-stubs",
     author="microsoft",
@@ -14,10 +14,10 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     package_data={
-        "stubs/scipy-stubs": ["*.pyi", "**/*.pyi", "**/**/*.pyi", "**/**/**/*.pyi"],
+        "stubs/sklearn": ["*.pyi", "**/*.pyi", "**/**/*.pyi", "**/**/**/*.pyi"],
     },
     packages=[
-        "stubs/scipy-stubs",
+        "stubs/sklearn",
     ],
     python_requires=">=3.8",
     zip_safe=False,
