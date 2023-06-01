@@ -364,3 +364,4 @@ utils/build_bundle/stubs
 AUTHORS
 ChangeLog
 
+*.DS_Store
