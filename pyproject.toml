@@ -88,17 +88,16 @@ show_column_numbers = false
 show_error_codes = true
 
 [tool.poetry]
-name = "sklearn-stubs"
+name = "scipy-stubs"
 version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
-packages = [{include = "sklearn-stubs"}]
+packages = [{include = "scipy-stubs"}]
 license = "MIT"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.12"
-scikit-learn = "^1.2.2"
 numpy = "^1.24.3"
 scipy = "^1.10.1"
 
