@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="python-type-stubs",
+    name="scipy-stubs",
     version="0.1.0",
     url="https://github.com/microsoft/python-type-stubs",
     author="microsoft",
