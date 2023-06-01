@@ -14,10 +14,10 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     package_data={
-        "scipy-stubs": ["*.pyi", "**/*.pyi", "**/**/*.pyi", "**/**/**/*.pyi"],
+        "stubs/scipy-stubs": ["*.pyi", "**/*.pyi", "**/**/*.pyi", "**/**/**/*.pyi"],
     },
     packages=[
-        "scipy-stubs",
+        "stubs/scipy-stubs",
     ],
     python_requires=">=3.8",
     zip_safe=False,
