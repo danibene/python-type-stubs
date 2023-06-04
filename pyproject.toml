@@ -88,12 +88,12 @@ show_column_numbers = false
 show_error_codes = true
 
 [tool.poetry]
-name = "sklearn-stubs"
+name = "matplotlib-stubs"
 version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
-packages = [{include = "sklearn-stubs"}]
+packages = [{include = "matplotlib-stubs"}]
 license = "MIT"
 
 [tool.poetry.dependencies]
